@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Min portfolio</title>
+        <link rel="stylesheet"href="designcss.css">
+    </head>
+    
+    <body>
+        
+<section id="mitgrid">  
+    
+<section id="sidebar">
+    
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+         <ul class="navbar-nav">
+          <li><a href="forside.html">Hjem</a></li>
+          <li><a href="program.html">Programmering</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Webudvikling</a></li>
+          <li><a href="#">Struktur</a></li>
+        </ul>
+    </nav>
+        
+        <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+             <a href="forside.html">Hjem</a>
+             <a href="program.html">Programmering</a>
+             <a href="#">Design</a>
+             <a href="#">Webudvikling</a>
+             <a href="#">Struktur</a>
+        </div>
+
+</section>
+    
+         <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+    
+    <header>
+        <section id="main">
+            <h1>Design</h1>
+        </section>
+    </header>
+        
+        <section id="timeline">
+            <nav id=emner>
+                <ul>
+                    <li><a href="#firstlook"class="selected"></a></li>
+                    <li><a href="#photoshop">Photoshop</a></li>
+                    <li><a href="#illustrator">Illustrator</a></li>
+                    <li><a href="#farver">Farver</a></li>
+                    <li><a href="#">Font</a></li>
+                    <li><a href="#">Photoshop</a></li>
+                </ul>
+            </nav>
+    
+    <section id="indhold">
+        
+        
+        
+        <section id="photoshop">
+            <h1>Photoshop</h1>
+            <p>Photoshop er et billedbehandlingsprogram udbudt af softwareproducenten Adobe. Photoshop fås både til Mac OS og Windows, og kan både bruges af professionelle og på hobbyplan.</p>
+            <p>Med Photoshop kan du i store træk gør alt med billeder, kun fantasien og dine Photoshop-evner sætter grænser. Faktisk, så siger man typisk, at lang de fleste plakater, bogomslag, logoer, magasiner og brochure, som du ser i din hverdag, er blevet manipuleret på en eller anden måde med Photoshop. Her er blot et par eksempler på, hvad der er muligt med Photoshop:</p>
+        </section>
+        
+    <section id=photob>
+        <img src="thumbnail.jfif" width="60%">
+        <img src="DK%20morgenbord.jpg" width="60%">
+    </section>
+        
+        <section id="illustrator">
+            <h1>Illustrator</h1>
+            <p>Illustrator har en super blanding af værktøjer til både tegning, tekst og typografi. Men Illustrators helt klare fordel er at lave grafik, der skal kunne skaleres til store størrelser uden at tabe kvalitet.</p><p>Dette er med til at gøre programmet uundværligt for mange grafikere, der arbejder med forskellige medier.</p>
+        </section>
+            
+    <section id=illub>
+        <img src="Asset%201.png" width="60%">
+    </section>
+        
+        <section id="farver">
+            <h1>Farver</h1>
+            <p>Farver spiller en stor rolle, når man ønsker et bestemt udtryk i fx malerkunst, fotografering og film. Farverne kan bruges som et virkemiddel, som kan forstærke noget op, og det samme kan mangel på farver - altså sort/hvid. Her er 3 måder, man kan bruge farver på som et virkemiddel:</p>
+            <h3>Komplementærfarver</h3>
+            <p>
+            I nogle billeder bruger man farver, der er modsætninger til hinanden, for at skabe balance. I fx et reklamebillede, hvor der er en dominerende farve, så vælger man ofte den modsatte farve til noget grafik - fx et prisskilt eller et slogan. Den modsatte farve kaldes komplementærfarven. På den måde træder dette grafik bedre frem og bliver mere synlig - og der er samtidig harmoni mellem farverne. </p>
+        </section>
+            
+        <section id=farveb>
+            <img src="farver.png" width="60%">
+        </section>
+            
+        <section id="farverr">
+            <p>De farver der står overfor hinanden i den yderste cirklel er komplementærfarver. De er hinandens modsætninger, men også makkere. Hvis begge farver er til stede på et billede, vil der være en form for balance og harmoni.</p>
+            <p>1. Primære farver
+Gul, rød, blå. Dette er farverne i midten af cirklen. De inderste farver i cirklen er primærfarverne. De er en slags forældre til de andre farver. Alle de andre farver stammer fra- og er en blanding af dem.</p>
+            <p>2. Sekundære farver
+Grøn, orange, lilla. Dette er farverne i den mellemste del af cirklen. Disse farve er blandinger af primærfarverne. Grøn er fx en blanding af gul og blå.
+ </p>
+            <p>3. Tertiære farver
+Dette er farverne i den yderste del (ringen) af cirklen. Disse farver er skabt ved at kombinere de sekundære farve. Fx "blå" får her 3 forskellige udgaver. Den mørkere blå som er sammensat af blå og lilla. Den almindelige blå som ikke er blandet, og den lidt lysere turkisblå, som er blandet af blå og grøn.</p>
+        </section>
+        
+    </section>
+            
+    </section>
+    
+        <footer>
+             <p>&copy; Maj Smedemark - portfolio</p>
+        </footer>
+</section>  
+    
+    </body>
+</html>
+    
+    

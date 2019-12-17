@@ -1,0 +1,69 @@
+h1
+{text-align: center;
+font-size: 3em;
+font-family: fantasy;
+color: wheat;
+}
+
+html {
+    background-color: black;
+}
+
+H3
+{
+    color: white; text-align:right;
+}
+
+H2 
+{
+    color: white;
+    text-align: center
+}
+img
+{float: right}
+
+p
+{color: white;
+font-family: serif}
+
+li
+{color: red}
+
+ul 
+{
+    background: #ff9999;
+padding: 20px
+}
+
+ul li 
+{
+    background: #ffe5e5;
+    padding: 5px;
+    margin-right: 35px;
+    text-align: right
+}
+#column
+{float: left;
+width: 50%;
+padding: 15px;
+}
+
+row:after 
+{
+    content:column;
+    display: table;
+    clear: both
+}
+
+ol 
+{
+    background: #ff9999;
+padding: 20px
+}
+
+ol li 
+{
+    background: #ffe5e5;
+    padding: 5px;
+    margin-right: 35px;
+    text-align: left;

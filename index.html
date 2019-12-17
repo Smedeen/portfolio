@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Min portfolio</title>
+        <link rel="stylesheet" href="ovelse1.css">
+    </head>
+    <body>
+        <section id="sidebar">
+    
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+         <ul class="navbar-nav">
+          <li><a href="forside.html">Hjem</a></li>
+          <li><a href="program.html">Programmering</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Webudvikling</a></li>
+          <li><a href="#">Struktur</a></li>
+        </ul>
+    </nav>
+        
+        <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+             <a href="forside.html">Hjem</a>
+             <a href="program.html">Programmering</a>
+             <a href="#">Design</a>
+             <a href="#">Webudvikling</a>
+             <a href="#">Struktur</a>
+        </div>
+
+</section>
+    
+         <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+        
+        <div id="mitgrid">
+            <div id="main">
+                <h1>Design</h1>
+            </div>
+            
+            <div id="emner"> 
+                <ul>
+                    <li><a href="#firstlook"class="selected"></a></li>
+                    <li><a href="#photoshop">Photoshop</a></li>
+                    <li><a href="#illustrator">Illustrator</a></li>
+                    <li><a href="#farver">Farver</a></li>
+                    <li><a href="#">Font</a></li>
+                    <li><a href="#">Photoshop</a></li>
+                </ul>
+            </div>
+            
+            <div id="photoshop">
+                <h1>Photoshop</h1>
+                  <p>Photoshop er et billedbehandlingsprogram udbudt af softwareproducenten Adobe. Photoshop fås både til Mac OS og Windows, og kan både bruges af professionelle og på hobbyplan.</p>
+            <p>Med Photoshop kan du i store træk gør alt med billeder, kun fantasien og dine Photoshop-evner sætter grænser. Faktisk, så siger man typisk, at lang de fleste plakater, bogomslag, logoer, magasiner og brochure, som du ser i din hverdag, er blevet manipuleret på en eller anden måde med Photoshop. Her er blot et par eksempler på, hvad der er muligt med Photoshop:</p>  
+            </div>
+            
+            <div id="photob">
+                 <img src="thumbnail.jfif" width="60%">
+                 <img src="DK%20morgenbord.jpg" width="60%">
+            </div>
+            
+            <div id="illustrator">
+                <h1>Illustrator</h1>
+                <p>Illustrator har en super blanding af værktøjer til både tegning, tekst og typografi. Men Illustrators helt klare fordel er at lave grafik, der skal kunne skaleres til store størrelser uden at tabe kvalitet.</p><p>Dette er med til at gøre programmet uundværligt for mange grafikere, der arbejder med forskellige medier.</p>
+            </div>
+            
+            <div id="illub">
+                 <img src="Asset%201.png" width="60%">
+            </div>
+            
+            <div id="farver">
+                <h1>Farver</h1>
+                <p>Farver spiller en stor rolle, når man ønsker et bestemt udtryk i fx malerkunst, fotografering og film. Farverne kan bruges som et virkemiddel, som kan forstærke noget op, og det samme kan mangel på farver - altså sort/hvid. Her er 3 måder, man kan bruge farver på som et virkemiddel:</p>
+            <h3>Komplementærfarver</h3>
+            <p>
+            I nogle billeder bruger man farver, der er modsætninger til hinanden, for at skabe balance. I fx et reklamebillede, hvor der er en dominerende farve, så vælger man ofte den modsatte farve til noget grafik - fx et prisskilt eller et slogan. Den modsatte farve kaldes komplementærfarven. På den måde træder dette grafik bedre frem og bliver mere synlig - og der er samtidig harmoni mellem farverne. </p>
+            </div>
+            
+            <div id="farveb">
+                <img src="farver.png" width="60%">
+            </div>
+        </div><!-- mitgrid -->
+        <footer>
+             <p>&copy; Maj Smedemark - portfolio</p>
+        </footer>
+    </body>
+</html>
+<!-- OBS: Div kan med fordel erstattes af semantiske elementer -->
+
+<!-- OBS: Navngivningen af id'er (felt1..felt8) bør være forklarende, og refere til indholdet. Eksempelvis "top-banner", "navigation", "undermenu", "aktuelt_tilbud", "nyhedsartikel", "kontakt_info" osv. -->
