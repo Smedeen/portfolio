@@ -5,25 +5,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Min portfolio</title>
         <link rel="stylesheet"href="style.css">
+        
     </head>
     
     <body>
         
-    <header>
-    <div class="container">
-      <h1 class="logo"></h1>
+     <section id="sidebar">
+    
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
 
-      <nav>
-        <ul>
+         <ul class="navbar-nav">
           <li><a href="forside.html">Hjem</a></li>
-          <li><a href="#">Programmering</a></li>
-          <li><a href="#">Design</a></li>
+          <li><a href="program.html">Programmering</a></li>
+          <li><a href="index.html">Design</a></li>
           <li><a href="#">Webudvikling</a></li>
           <li><a href="#">Struktur</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
+    </nav>
+        
+        <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+             <a href="forside.html">Hjem</a>
+             <a href="program.html">Programmering</a>
+             <a href="#">Design</a>
+             <a href="#">Webudvikling</a>
+             <a href="#">Struktur</a>
+        </div>
+
+</section>
+    
+         <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
         
         
 <section id="mitgrid">

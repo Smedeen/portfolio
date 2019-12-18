@@ -6,7 +6,51 @@
         <title>Min portfolio</title>
         <link rel="stylesheet"href="programstyle.css">
     </head>
+    <body>
+           <section id="sidebar">
     
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+         <ul class="navbar-nav">
+          <li><a href="forside.html">Hjem</a></li>
+          <li><a href="program.html">Programmering</a></li>
+          <li><a href="index.html">Design</a></li>
+          <li><a href="#">Webudvikling</a></li>
+          <li><a href="#">Struktur</a></li>
+        </ul>
+    </nav>
+        
+        <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+             <a href="forside.html">Hjem</a>
+             <a href="program.html">Programmering</a>
+             <a href="#">Design</a>
+             <a href="#">Webudvikling</a>
+             <a href="#">Struktur</a>
+        </div>
+
+</section>
+    
+         <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
         
 <section id="mitgrid">
     
@@ -15,10 +59,10 @@
         <ul id="emner">
 			<li><a href="#Programmering" class="selected">Programmering</a></li>
 			<li><a href="#HTML">HTML</a></li>
-			<li><a href="#HTML eks:">HTML eks:</a></li>
 			<li><a href="#CSS">CSS</a></li>
-			<li><a href="#CSS eks:">CSS eks:</a></li>
             <li><a href="#grid">Grid</a></li>
+            <li><a href="#responsiv">Responsiv design</a></li>
+            <li><a href="#php">PHP</a></li>
             <li><a href="#onepage">One page project</a></li>
             <li><a href="#refleksion">Refleksion</a></li>
 		</ul>
@@ -32,11 +76,8 @@
             <p>På første hovedforløb blev jeg instrueret til det grundlæggende af Html. Html betyder HyperText Markup Language.</p>
             <p> HTML bruges til at strukturere indholdet på en hjemmeside ved hjælp af en række HTML-elementer. HTML-elementer består af tags. Et tag består af < og >. Det der står imellem < og > er tag-typen. Der er altid et start tag <tagnavn> og et slut tag </tagnavn>. Imellem disse tags kan man skrive tekst eller andet data. Den tekst eller data du indsætter mellem start-tagget og slut-tagget, vil blive behandlet i henhold til hvad tagget betyder. Et element kan også have tilhørende attributter, som afgør hvordan elementet skal behandles.</p>
             <p>I kan se her nedeunder på en af de første opgaver jeg skulle lave på forløbet, hvordan de forskellige tags kan bruges.</p>
-    </li>
-            
-    <li id="HTML eks:">
-        <h1>HTML eks:</h1>
-                <iframe src="file:///C:/Users/Maj/Desktop/portforlie/html%20og%20css/index.html.html" width="700" height="500"></iframe>
+    
+                <iframe src="file:///C:/Users/Maj/Desktop/portforlie/html%20og%20css/index.html.html" width="600" height="400"></iframe>
     </li>
     
             
@@ -48,18 +89,35 @@ CSS et layout sprog, mens HTML er et struktur-sprog.
 CSS kan separates fra html og vær sin egen fil nemlig til et stylesheet, som er linket til ens HTML-dokument. Man kan også skrive CSS direkte i HTML-dokumentet, hvis man ønsker at style et specifikt HTML-element på en specifik side. Denne måde at style sine individuelle HTML-elementer på kaldes ”in-line styling”, da du skriver din CSS direkte sammen med din HTML.
 </p>
         <p>I kan se her nedeunder videre udvikling på min første html site med brug af css</p>
-    </li>
     
-    <li id="CSS eks:">
-        <h1>CSS eks:</h1>
-                <iframe src="file:///C:/Users/Maj/Desktop/portforlie/html%20og%20css/css.html" width="700" height="500"></iframe>
+                <iframe src="file:///C:/Users/Maj/Desktop/portforlie/html%20og%20css/css.html" width="600" height="400"></iframe>
     </li>
              
             
      <li id="grid">
         <h1>Css-grid:</h1>
             <p>CSS-grid er en teknik i ens Stylesheets, der gør det muligt for webudviklere at oprette responsive webdesignlayouts lettere og konsekvent på tværs af browsere. Der har været andre metoder til at kontrollere websidens layoutmetoder, såsom tabeller, kassemodellen og CSS flexbox. </p>
-       <img src="mose.png" width="800">
+       <img src="mose.png" width="650">
+         <img src="grid.png" width="650">
+    </li>
+                
+    <li id="responsiv">
+        <h1>Responsiv Design</h1>
+            <P>Responsive design er en måde at designe hjemmesider på. Man designer hjemmesiden med den hensigt, at den skal kunne ses og bruges på både smartphones, tablets og almindelige desktop computere.
+Ideen er, at hjemmesiden automatisk skal kunne tilpasse sig skærmens størrelse, således at tekst, billeder, tabeller, menuer, grafik osv. skalleres enten op eller ned, alt afhængig af hvilken enhed brugeren benytter til at se siden.
+At have en responsive hjemmeside, er i takt med den eksplosive udbredelse af mobile enheder, blevet vigtigere end nogensinde før. Et godt på en responsive hjemmeside er NemProgrammering.dk selv. Når du besøger siden, så prøv at gøre dit browservindue større og mindre.
+</P>
+        <img src="wemarket-derfor-er-responsivt-design-vigtigere-end-nogensinde-f%C3%B8r-e1540450437835.jpg"width="500">>
+    </li>
+                
+    <li id="php">
+         <h1>PHP</h1>
+            <p>PHP står for "Hypertext Preprocessor"</p>
+            <p>Dette betyder i praksis, at al bearbejdning af kode og data i PHP bliver kørt på serveren, som herefter sender resultatet tilbage som HTML til brugerens browser. Dette ligger i kontrast til JavaScript, hvor koden bliver læst og udført direkte i/af klientens browser.
+Alle filer der vil anvende PHP skal ende på .php, ellers vil serveren ikke kunne læse udføre PHP koden. Du kan både skrive PHP, HTML, CSS og JavaScript i PHP filer.
+PHP giver dig mulighed for at sende e-mails fra din hjemmeside, have login funktionalitet på din hjemmeside, køre et forum, lave afstemninger samt mange andre interaktive og databasedrevne webapplikationer. Disse webapplikationer er alt sammen noget, som ikke er muligt udelukkende med HTML, CSS og JavaScript for den sags skyld.
+</p>
+        <img src="php.jpg" width="500">
     </li>
     
      <li id="onepage">
@@ -74,7 +132,7 @@ CSS kan separates fra html og vær sin egen fil nemlig til et stylesheet, som er
             <p>Jeg havde nogen som helst erfaring med kodning af hjemmesider og havde heller ikke nogen ide om at det var det jeg skulle arbejde med hjemmesider i den nærmeste fremtid,</p>
             <p>men forløbet her har givet mig min lysten og nysgerrigheden for at arbejde endnu videre med det.</p>
             <p>Der er også blevet lavet en webbog af hele holdet, hvor der står hva man ellers kan bruge HTML og CSS, bogen kan findes her <a href="http://jesp883f.apache.eadania.dk/webbog/?fbclid=IwAR0sAE3PVsynPgA-wUGWFcXC0XZ6mYORMf_QBXxVcRxQr_okHn6CeER-ohM">Webbogen</a> </p>
-            <p>Kilder: linkedin learning, w3schools og intro til html - Niels Østergaard </p>
+            <p>Kilder: linkedin learning, w3schools og intro til html, CSS og PHP - Niels Østergaard </p>
     </li>
         
         <footer>
