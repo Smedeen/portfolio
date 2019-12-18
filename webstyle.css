@@ -1,0 +1,293 @@
+/*nav bar start */
+
+.navbar{
+  background-color:#ffcc00;
+  overflow:hidden;
+  height:63px;
+}
+
+.navbar a{
+  float:left;
+  display:block;
+  color:#000;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+
+.navbar a:hover{
+  background-color:#fff;
+  color:#000;
+}
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#111;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+#main{
+  transition:margin-left 0.5s;
+  padding:20px;
+  overflow:hidden;
+  width:100%;
+}
+
+@media(max-width:568px){
+  .navbar-nav{display:none}
+}
+
+@media(min-width:568px){
+  /*.open-slide{display:none}*/
+}
+/*nav bar slut */
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+	color: #ffffcc;
+	text-decoration: none;
+}
+	a:hover,
+	a.selected {
+		color: #ffcc00;
+	}
+
+.sociales {
+	text-align: center;
+    }
+
+
+footer{
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+body {
+	background-color: #222;
+	font-family: Georgia, serif;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    text-shadow: #000 1px 1px 2px;
+     margin: 10px 40px;
+    width: 50%
+				}
+
+p{
+    font-size: 14px;
+    margin: 10px 40px;
+    font-weight: normal;
+    line-height: 22px;
+    text-shadow: #000 1px 1px 2px;
+    color: #ffffcc;
+				}
+
+h3{
+    font-size: 18px;
+    margin: 10px 40px;
+    font-weight: normal;
+    line-height: 22px;
+    text-shadow: #000 1px 1px 2px;
+    color: #ffcc00;
+				}
+
+img{
+    margin: 10px 20px;
+    font-weight: normal;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%%;
+				}
+
+#historie, #serverside, #versionsstyring, #ophavsret, #refleksion h1{
+    color: #ffcc00;
+        
+}
+
+
+
+
+#mitgrid {
+  display: grid;
+    width: 100%
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas:
+        "a a"
+        "b b"
+        "c c" 
+        "d d"
+        "e e"
+        "f f"
+        "g g"
+        "h h" 
+        "i i"
+        "j j"
+        "k k"
+        "l l";
+}
+
+
+#main {
+    grid-area: a;
+    background-color: #ffcc00;
+    padding: 30px;
+    text-align: center;
+    font-size: 10px;
+    color: #111;
+}
+
+#emner {
+    grid-area: b;  
+}
+
+
+#historie {
+    grid-area: c;
+        
+    
+}
+
+#hisb {
+    grid-area: d;
+}
+
+
+#serverside{
+    grid-area: e;
+    
+}
+
+#serverb {
+    grid-area: f; 
+}
+
+
+#versionsstyring {
+    grid-area: g;
+}
+
+
+#versionb {
+    grid-area: h;
+}
+
+#ophavsret{
+    grid-area: i;
+}
+
+#ophavb{
+    grid-area: j
+}
+
+#refleksion{
+    grid-area: l;
+}
+
+@media screen and (min-width:700px){
+
+    #mitgrid {
+    display: grid;
+    grid-gap: 30fr;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+        "a a a a"
+        "b b b b"
+        "c c d d"
+        "f f e e"
+        "g g h h"
+        "j j i i"
+        "l l l l";
+        }
+        
+#main, #enmer {
+ height: 30vh;
+}
+
+
+
+#historie, #hisb {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+
+#serverside, #serverb {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+
+#versionsstyring, #versionb  {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+}
+    
+    
+#ophavsret, #ophavb{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    
+
+#refleksion{
+   90vh;
+}
+
+        
+        }

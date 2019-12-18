@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Min portfolio</title>
+        <link rel="stylesheet" href="webstyle.css">
+    </head>
+    <body>
+        <section id="sidebar">
+    
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+         <ul class="navbar-nav">
+          <li><a href="forside.html">Hjem</a></li>
+          <li><a href="program.html">Programmering</a></li>
+          <li><a href="index.html">Design</a></li>
+          <li><a href="#">Webudvikling</a></li>
+          <li><a href="#">Struktur</a></li>
+        </ul>
+    </nav>
+        
+        <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+             <a href="forside.html">Hjem</a>
+             <a href="program.html">Programmering</a>
+             <a href="index.html">Design</a>
+             <a href="web.html">Webudvikling</a>
+             <a href="#">Struktur</a>
+        </div>
+
+</section>
+    
+         <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+        
+        <div id="mitgrid">
+            <div id="main">
+                <h1>Web-</h1>
+                <h1>udvikling</h1>
+            </div>
+            
+            <div id="emner"> 
+                <ul>
+                    <li><a href="#firstlook"class="selected"></a></li>
+                    <li><a href="#historie">Internettets Historie</a></li>
+                    <li><a href="#serverside">Serverside scripting</a></li>
+                    <li><a href="#versionsstyring">Versionsstyring</a></li>
+                    <li><a href="#ophavsret">Ophavsret og licenslering</a></li>
+                    <li><a href="#refleksion">Refleksion</a></li>
+                </ul>
+            </div>
+            
+            <div id="historie">
+                <h1>Internettets Historie</h1>
+                  <p>Man skal se internettet som infrastrukturen, og World Wide Web som det, der kører på det. Ligesom biler kører på ’vejnettet’. En protokol er standarderne, eller regelsættet som definere hvordan computeren skal kommunikere. Det kan sammenlignes med en aftale, eller en måde at gøre tingene på. Lidt ligesom en hilsen, hvor hvis man er fra samme kultur er man enige om at man giver hånd. Ellers er det to protokoller der ikke passer sammen. Internettet som vi kender det blev grundlagt af Tim Berners-Lee.
+                Han blev inspireret af hans far, som skrev en artikel omkring hjernen, og hvordan hjernen kommunikerede. Det brugte han som basis for Arpanet, som viste at koble sammen gennem computere faktisk virkede.</p>
+            <p>Den første søgemaskine var et samlet sted med alt viden.
+                Det blev kaldt ’The world palace of knowledge’.
+                Man ringede eksempelvis ind, også kiggede en sekretær igennem arkiver og fandt info til en.Også andre emner som kunne være relevant. Der kom så en automatisk udgave af det, kaldet ’The Memex’. Her navigerede man rundt med ’keywords’, som den så brugte til at finde andre dokumenter med samme ’keyword’. Så hvis man prøvede ’hest’ så fik man både hesten, skakspilsbrikken og gymnastikredskabet.</p>  
+            </div>
+            
+            <div id="hisb">
+                 <img src="www615.jpg" width="70%">
+            </div>
+            
+            <div id="serverside">
+                <h1>Serverside scripting</h1>
+                <p>Server-side scripting er en teknik, der anvendes i webudvikling, som involverer at anvende scripts på en webserver, der producerer et svar, der er tilpasset til hver brugers (klientens) anmodning til webstedet. Alternativet er, at webserveren selv leverer en statisk webside. Scripts kan skrives på et hvilket som helst af et antal script-sprog på serversiden, der er tilgængelige (se nedenfor). Skriptserver på serversiden adskilles fra scripting på klientsiden, hvor integrerede scripts, såsom JavaScript, køres klientsiden i en webbrowser, men begge teknikker bruges ofte sammen.</p><p>Script på serversiden bruges ofte til at give en tilpasset grænseflade til brugeren. Disse scripts kan samle klientegenskaber til brug i tilpasning af svaret baseret på disse egenskaber, brugerens krav, adgangsrettigheder osv. Server-sidescripting gør det også muligt for webstedsejeren at skjule den kildekode, der genererer grænsefladen, mens med klientsiden scripting har brugeren adgang til al den kode, der er modtaget af klienten. En nedside for brugen af scripting på serversiden er, at klienten skal fremsætte yderligere anmodninger over netværket til serveren for at vise nye oplysninger til brugeren via webbrowseren. Disse anmodninger kan bremse oplevelsen for brugeren, placere mere belastning på serveren og forhindre brug af applikationen, når brugeren er afbrudt fra serveren. Når serveren serverer data på en almindeligt anvendt måde, for eksempel i henhold til HTTP- eller FTP-protokollerne, kan brugerne muligvis vælge et antal klientprogrammer (de fleste moderne webbrowsere kan anmode om og modtage data ved hjælp af begge disse protokoller). I tilfælde af mere specialiserede applikationer kan programmerere skrive deres egen server, klient og kommunikationsprotokol, der kun kan bruges sammen. Programmer, der kører på en brugers lokale computer uden nogensinde at sende eller modtage data over et netværk, betragtes ikke som klienter, og operationerne af sådanne programmer vil derfor ikke blive betragtet som klientsidefunktioner.</p>
+            </div>
+            
+            <div id="serverb">
+                 <img src="client-side-scripting.jpg" width="70%">
+            </div>
+            
+            <div id="versionsstyring">
+                <h1>Versions-</h1>
+                <h1>styring</h1>
+                <p>Versionsstyring er et softwareværktøj til at holde styr på versioner af filer, f.eks. til brug for udvikling af software. Versionsstyringssoftware kan holde styr på ændringer, så man altid kan gå tilbage til en tidligere version eller undersøge, hvad der præcist er ændret mellem en eller flere versioner af en tekstfil. Tekstfilerne består ofte af kildeteksten til programmer, men kan også indeholde andre ting, lige som filer, der ikke består af tekst, kan håndteres.</p>
+
+                <p>Versionsstyringssystemer holder desuden styr på hvem, der har foretaget de enkelte ændringer, lige som ændringer foretaget af flere programmører i den samme fil i mange tilfælde kan flettes sammen. Nogle systemer er baseret på en låsning af de enkelte filer, før der kan ændres. Dette forhindrer andre i at ændre den pågældende fil, så længe den er låst.</p>
+            <h3>Github</h3>
+            <p>
+            GitHub er en Git-depot-hostingtjeneste, men den tilføjer mange af sine egne funktioner. Mens Git er et kommandolinjeværktøj, giver GitHub en webbaseret grafisk grænseflade. Det giver også adgangskontrol og flere samarbejdsfunktioner, såsom wikier og grundlæggende værktøj til opgavehåndtering til hvert projekt. </p>
+            </div>
+            
+            <div id="versionb">
+                <img src="page_16.jpg" width="60%">
+            </div>
+            
+            <div id="ophavsret">
+                <h1>Ophavsret og licenslering</h1>
+                <h3>Ophavsret</h3>
+                    <p>Ophavsret er en beskyttelsesret, som personer, som frembringer værker, har til at disponere over værket. Ophavsretten sikrer kunstnere et vederlag ved brug af bøger og musikværker med videre, men sikrer også at samfundet kan få adgang til offentliggjorte værker på bestemte vilkår. Værksbegrebet er centralt i ophavsretten og præciserer, at skabelse har værkshøjde, og er i ophavsretlig forstand et værk, når det er resultat af en egen selvstændig kreativ proces. Det såkaldte dobbeltfrembringelseskrav, hvorved man ser på, om to personer, uafhængigt af og uden kendskab til hinanden, måtte frembringe det samme værk, kan være et afgørende moment i forhold til værkshøjdebedømmelsen.[1] På engelsk bruges ordet "Copyright." Lovene omkring ophavsret er forskellige fra land til land.</p>
+                <h3>Licenslering</h3>
+                    <p>Licens, som betyder tilladelse eller bevilling, bruges i mange sammenhænge. For at opnå licens kan der være krav om betaling af et engangsbeløb og/eller en løbende betaling, for at opnå licens kan der også være krav om at bestå en prøve eller licensen kan løbe en tidsbegrænset periode. En licens kan også være fri (gratis) - eller forudsætte at brugeren køber en øl til software-producenten (beerware).</p>
+            </div>
+            
+            <div id="ophavb">
+                <img src="7th-Annual.png" width="70%">
+            </div>
+            
+            
+            <div id="refleksion">
+                <h1>Refleksion</h1>
+            </div>
+            
+        </div><!-- mitgrid -->
+        <footer>
+             <p>&copy; Maj Smedemark - portfolio</p>
+        </footer>
+    </body>
+</html>
