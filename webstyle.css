@@ -146,9 +146,19 @@ img{
     padding-right: 20%%;
 				}
 
-#historie, #serverside, #versionsstyring, #ophavsret, #refleksion h1{
+
+#historie, #serverside, #versionsstyring, #ophavsret, #refleksion, #informations h1{
     color: #ffcc00;
         
+}
+
+#info li{
+    font-size: 14px;
+    margin: 10px 40px;
+    font-weight: normal;
+    line-height: 22px;
+    text-shadow: #000 1px 1px 2px;
+    color: #ffffcc;
 }
 
 
@@ -156,7 +166,7 @@ img{
 
 #mitgrid {
   display: grid;
-    width: 100%
+    width: 100%;
     grid-template-columns: 1fr, 1fr;
     grid-template-areas:
         "a a"
@@ -170,7 +180,9 @@ img{
         "i i"
         "j j"
         "k k"
-        "l l";
+        "l l"
+        "m m"
+        "n n";
 }
 
 
@@ -220,11 +232,19 @@ img{
 }
 
 #ophavb{
-    grid-area: j
+    grid-area: j;
+}
+
+#informations{
+    grid-area: l;
+}
+
+#info{
+    grid-area: m;
 }
 
 #refleksion{
-    grid-area: l;
+    grid-area: n;
 }
 
 @media screen and (min-width:700px){
@@ -240,7 +260,8 @@ img{
         "f f e e"
         "g g h h"
         "j j i i"
-        "l l l l";
+        "l l m m"
+        "n n n n";
         }
         
 #main, #enmer {
@@ -279,6 +300,13 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+}
+    
+#informations, #info{
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
     
 

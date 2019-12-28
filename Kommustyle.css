@@ -146,13 +146,13 @@ img{
     padding-right: 20%%;
 				}
 
-#kommunikation, #kvantitativ, #Kvalitativ, #præsentationsteknik, #paradigme, #refleksion h1{
+#kommunikation, #kvantitativ, #Kvalitativ, #præsentationsteknik, #paradigme, #refleksion, #tekstproduktion h1{
     color: #ffcc00;
         
 }
 
 
-#kvantitativ li, #Kvalitativ li, #empiri li, #præsentationsteknik li {
+#kvantitativ li, #Kvalitativ li, #empiri li, #præsenb li {
     font-size: 14px;
     margin: 10px 40px;
     font-weight: normal;
@@ -167,7 +167,7 @@ img{
 
 #mitgrid {
   display: grid;
-    width: 100%
+    width: 100%;
     grid-template-columns: 1fr, 1fr;
     grid-template-areas:
         "a a"
@@ -182,7 +182,9 @@ img{
         "j j"
         "k k"
         "l l"
-        "m m";
+        "m m"
+        "n n"
+        "o o";
 }
 
 
@@ -232,15 +234,23 @@ img{
 }
 
 #paradigme{
-    grid-area: j
+    grid-area: j;
 }
 
 #parab{
     grid-area: l;
 }
 
-#refleksion{
+#tekstproduktion{
     grid-area: m;
+}
+
+#tekst{
+    grid-area: n;
+}
+
+#refleksion{
+    grid-area: o;
 }
 
 @media screen and (min-width:700px){
@@ -254,9 +264,11 @@ img{
         "b b b b"
         "c c d d"
         "f f e e"
-        "g g h h"
-        "j j i i"
-        "l l l l";
+        "g g g g"
+        "h h i i"
+        "j j l l"
+        "m m n n"
+        "o o o o";
         }
         
 #main, #enmer {
@@ -265,23 +277,27 @@ img{
 
 
 
-#historie, #hisb {
+#kommunikation, #kommub {
         height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    
+    #kommub{
+        margin-top: 70px;
+    }
+
+
+#kvantitativ, #Kvalitativ, #empiri {
+        height: 70vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 }
 
 
-#serverside, #serverb {
-        height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-
-
-#versionsstyring, #versionb  {
+#præsentationsteknik, #parab {
         height: 100vh;
         flex-direction: column;
         justify-content: center;
@@ -290,14 +306,25 @@ img{
 }
     
     
-#ophavsret, #ophavb{
-        height: 100vh;
+#paradigme, #parab{
+        height: 120vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 }
     
-
+#parab{
+        margin-top: 70px;
+    }
+    
+#tekstproduktion, #tekst{
+    height: 120vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+    
 #refleksion{
    90vh;
 }
