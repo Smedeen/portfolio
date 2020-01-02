@@ -112,8 +112,8 @@ body {
 }
 
 h1{
-    color: aqua
-    font-size: 48px;
+    color: #ffcc00;
+    font-size: 30px;
     text-align: center;
     text-shadow: #000 1px 1px 2px;
 				}
@@ -146,9 +146,8 @@ img{
     padding-right: 20%%;
 				}
 
-
-#historie, #serverside, #versionsstyring, #ophavsret, #refleksion, #informations h1{
-    color: #ffcc00;
+#main h1{
+    color: black;
         
 }
 
@@ -272,6 +271,7 @@ img{
 
 #historie, #hisb {
         height: 100vh;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -280,6 +280,7 @@ img{
 
 #serverside, #serverb {
         height: 100vh;
+         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -288,15 +289,16 @@ img{
 
 #versionsstyring, #versionb  {
         height: 100vh;
+         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
 }
     
     
 #ophavsret, #ophavb{
         height: 100vh;
+         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -304,14 +306,19 @@ img{
     
 #informations, #info{
     height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
     
 
 #refleksion{
    90vh;
+     display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 
         

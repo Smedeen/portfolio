@@ -112,8 +112,8 @@ body {
 }
 
 h1{
-    color: aqua
-    font-size: 48px;
+    color: #ffcc00;
+    font-size: 30px;
     text-align: center;
     text-shadow: #000 1px 1px 2px;
 				}
@@ -146,9 +146,8 @@ img{
     padding-right: 20%%;
 				}
 
-#kommunikation, #kvantitativ, #Kvalitativ, #præsentationsteknik, #paradigme, #refleksion, #tekstproduktion h1{
-    color: #ffcc00;
-        
+#main h1{
+    color: black;      
 }
 
 
@@ -279,6 +278,7 @@ img{
 
 #kommunikation, #kommub {
         height: 100vh;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -289,16 +289,19 @@ img{
     }
 
 
-#kvantitativ, #Kvalitativ, #empiri {
+#kvantitativ, #Kvalitativ {
         height: 70vh;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    
 }
 
 
-#præsentationsteknik, #parab {
+#præsentationsteknik, #præsenb {
         height: 100vh;
+       display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -308,25 +311,35 @@ img{
     
 #paradigme, #parab{
         height: 120vh;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 }
     
 #parab{
-        margin-top: 70px;
+        margin-top: 150px;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
 #tekstproduktion, #tekst{
     height: 120vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
     
     
 #refleksion{
    90vh;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 
         
