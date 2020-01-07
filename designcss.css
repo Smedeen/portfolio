@@ -1,7 +1,5 @@
-body {
-	background-color: #222;
-	font-family: Georgia, serif;
-    overflow-x: hidden;
+body{	
+background-color: #222;
 }
 
 h2{
@@ -132,7 +130,6 @@ footer{
 
 
 
-
 #indhold section.selected {
     -webkit-transform: scale(1.1,1.1);
     -moz-transform: scale(1.1,1.1);
@@ -141,40 +138,6 @@ footer{
     transform: scale(1.1,1.1);
     }
 
-#indhold section h1{
-    color: #ffcc00;
-    font-size: 48px;
-    text-align: center;
-    text-shadow: #000 1px 1px 2px;
-				}
-
-#indhold section p{
-    font-size: 14px;
-    margin: 10px 20px;
-    font-weight: normal;
-    line-height: 22px;
-    text-shadow: #000 1px 1px 2px;
-    color: white;
-				}
-
-#indhold section h3{
-    font-size: 18px;
-    margin: 10px 20px;
-    font-weight: normal;
-    line-height: 22px;
-    text-shadow: #000 1px 1px 2px;
-    color: #ffcc00;
-				}
-
-#indhold section img{
-    margin: 10px 20px;
-    font-weight: normal;
-    align-content: center;
-    text-align: center;
-    align-items: center;
-    padding-left: 20%;
-    padding-right: 20%%;
-				}
 
 
 #emner{
@@ -183,17 +146,54 @@ footer{
     overflow:hidden; 
 }
 
-
-#indhold{
-    padding: 20px;
-    background-color: #222;
-    overflow: hidden;
-}
-
 section:after{
     content: "";
 }
 
+
+h1{
+    color: #ffcc00;
+    text-align: center;
+    text-shadow: #000 1px 1px 2px;
+				}
+
+p{
+    margin: 10px 40px;
+    font-weight: normal;
+    line-height: 22px;
+    text-shadow: #000 1px 1px 2px;
+    color: #ffffcc;
+				}
+
+h3{
+    margin: 10px 40px;
+    font-weight: normal;
+    line-height: 22px;
+    text-shadow: #000 1px 1px 2px;
+    color: #ffcc00;
+				}
+
+img{
+    margin: 10px 20px;
+    font-weight: normal;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+				}
+
+iframe{
+     margin: 10px 20px;
+    font-weight: normal;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#main h1{
+    color: black;
+        
+}
 
 
 

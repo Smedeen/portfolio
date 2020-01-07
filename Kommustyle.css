@@ -1,3 +1,13 @@
+body{	
+background-color: #222;
+}
+
+h2{
+        margin: 75px;
+        max-width: 500px;
+        margin: 0 auto 20px;
+}
+
 /*nav bar start */
 
 .navbar{
@@ -22,7 +32,7 @@
 }
 
 .navbar a:hover{
-  background-color:#fff;
+  background-color:#222;
   color:#000;
 }
 
@@ -80,6 +90,7 @@
 
 
 
+/* Style the header */
 *{
     box-sizing: border-box;
 }
@@ -97,6 +108,17 @@ a {
 	text-align: center;
     }
 
+#emner li{
+    overflow:hidden; 
+}
+
+header{
+    background-color: #ffcc00;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
 
 footer{
     background-color: #ffcc00;
@@ -105,11 +127,29 @@ footer{
     color: black;
 }
 
-body {
-	background-color: #222;
-	font-family: Georgia, serif;
-    overflow-x: hidden;
+
+
+
+#indhold section.selected {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    }
+
+
+
+#emner{
+    background: #222;
+    padding: 20px;
+    overflow:hidden; 
 }
+
+section:after{
+    content: "";
+}
+
 
 h1{
     color: #ffcc00;
@@ -139,16 +179,23 @@ img{
     align-content: center;
     text-align: center;
     align-items: center;
-    padding-left: 20%;
-    padding-right: 20%%;
 				}
 
-#main h1{
-    color: black;      
+iframe{
+     margin: 10px 20px;
+    font-weight: normal;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    
 }
 
+#main h1{
+    color: black;
+        
+}
 
-#kvantitativ li, #Kvalitativ li, #empiri li, #præsenb li {
+li {
     font-size: 14px;
     margin: 10px 40px;
     font-weight: normal;
@@ -157,8 +204,20 @@ img{
     color: #ffffcc;
 }
 
+#iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
 
-
+#iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 60%;
+  height: 60%;
+}
 
 
 #mitgrid {
@@ -172,7 +231,6 @@ img{
         "d d"
         "e e"
         "f f"
-        "g g"
         "h h" 
         "i i"
         "j j"
@@ -180,7 +238,14 @@ img{
         "l l"
         "m m"
         "n n"
-        "o o";
+        "o o"
+        "p p"
+        "q q"
+        "r r"
+        "s s"
+        "t t"
+        "v v"
+        "w w";
 }
 
 
@@ -216,11 +281,6 @@ img{
 }
 
 
-#empiri {
-    grid-area: g;
-}
-
-
 #præsentationsteknik {
     grid-area: h;
 }
@@ -245,8 +305,36 @@ img{
     grid-area: n;
 }
 
+#Business{
+    grid-area: o
+}
+
+#facer{
+    grid-area: p;
+}
+
+#busb{
+    grid-area: q;
+}
+
+#thinking{
+    grid-area: r;
+}
+
+#design{
+    grid-area: s;
+}
+
+#designb{
+    grid-area: t;
+}
+
+#thinkb{
+    grid-area: v;
+}
+
 #refleksion{
-    grid-area: o;
+    grid-area: w;
 }
 
 @media screen and (min-width:700px){
@@ -260,18 +348,23 @@ img{
         "b b b b"
         "c c d d"
         "f f e e"
-        "g g g g"
         "h h i i"
         "j j l l"
         "m m n n"
-        "o o o o";
+        "o o p p"
+        "q q q q"
+        "r r s s"
+        "t t v v"
+        "w w w w";
         }
         
 #main, #enmer {
  height: 30vh;
 }
 
-
+    .iframe{
+        width: 200%;
+    }
 
 #kommunikation, #kommub {
         height: 100vh;
@@ -325,6 +418,22 @@ img{
 #tekstproduktion, #tekst{
     height: 120vh;
    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    
+#Business, #facer{
+     height: 100vh;
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+#thinking, #design{
+     height: 100vh;
+       display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;

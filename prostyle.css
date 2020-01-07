@@ -1,3 +1,13 @@
+body{	
+background-color: #222;
+}
+
+h2{
+        margin: 75px;
+        max-width: 500px;
+        margin: 0 auto 20px;
+}
+
 /*nav bar start */
 
 .navbar{
@@ -22,7 +32,7 @@
 }
 
 .navbar a:hover{
-  background-color:#fff;
+  background-color:#222;
   color:#000;
 }
 
@@ -80,6 +90,7 @@
 
 
 
+/* Style the header */
 *{
     box-sizing: border-box;
 }
@@ -97,6 +108,17 @@ a {
 	text-align: center;
     }
 
+#emner li{
+    overflow:hidden; 
+}
+
+header{
+    background-color: #ffcc00;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
 
 footer{
     background-color: #ffcc00;
@@ -105,11 +127,29 @@ footer{
     color: black;
 }
 
-body {
-	background-color: #222;
-	font-family: Georgia, serif;
-    overflow-x: hidden;
+
+
+
+#indhold section.selected {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    }
+
+
+
+#emner{
+    background: #222;
+    padding: 20px;
+    overflow:hidden; 
 }
+
+section:after{
+    content: "";
+}
+
 
 h1{
     color: #ffcc00;
@@ -125,6 +165,13 @@ p{
     color: #ffffcc;
 				}
 
+h3{
+    margin: 10px 40px;
+    font-weight: normal;
+    line-height: 22px;
+    text-shadow: #000 1px 1px 2px;
+    color: #ffcc00;
+				}
 
 img{
     margin: 10px 20px;
@@ -132,8 +179,6 @@ img{
     align-content: center;
     text-align: center;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
 				}
 
 iframe{
@@ -149,8 +194,6 @@ iframe{
     color: black;
         
 }
-
-
 
 
 #mitgrid {
@@ -172,9 +215,7 @@ iframe{
         "l l"
         "m m"
         "n n"
-        "o o"
-        "p p"
-        "q q";
+        "o o";
 }
 
 
@@ -195,7 +236,7 @@ iframe{
     grid-area: c;
 }
 
-#htmlb {
+#hb {
     grid-area: d;
 }
 
@@ -228,29 +269,25 @@ iframe{
 }
 
 #php{
-    grid-area: l;
+    grid-area: k;
 }
 
 #phpb{
-    grid-area: m;
+    grid-area: l;
 }
 
 #onepage{
-    grid-area: n;
+    grid-area: m;
 }
 
 #oneb{
+    grid-area: n;
+}
+
+#refleksion{
     grid-area: o;
 }
 
-
-#refleksion{
-    grid-area: p;
-}
-
-footer{
-    grid-area: q;
-}
 
 @media screen and (min-width:700px){
 
@@ -266,16 +303,12 @@ footer{
         "g g h h"
         "j j i i"
         "l l m m"
-        "n n o o"
-        "p p p p"
-        "q q q q";
+        "n n n n";
         }
         
 #main, #enmer {
  height: 30vh;
 }
-
-
 
 #html, #hb {
         height: 100vh;
@@ -295,7 +328,7 @@ footer{
 }
 
 
-#versionsstyring, #versionb  {
+#grid, #gridb  {
         height: 100vh;
          display: flex;
         flex-direction: column;
@@ -303,18 +336,10 @@ footer{
         align-items: center;
 }
     
-    
-#grid, #gridb{
-        height: 100vh;
-         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
     
 #responsiv, #resb{
-    height: 100vh;
-    display: flex;
+        height: 100vh;
+         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -323,21 +348,10 @@ footer{
 #php, #phpb{
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-     align-items: center;
-}
-    
-#onepage, #oneb{
-    height: 100vh;
-    display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-}
-
-
-    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}   
 
 #refleksion{
    90vh;

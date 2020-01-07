@@ -1,3 +1,13 @@
+body{	
+background-color: #222;
+}
+
+h2{
+        margin: 75px;
+        max-width: 500px;
+        margin: 0 auto 20px;
+}
+
 /*nav bar start */
 
 .navbar{
@@ -22,7 +32,7 @@
 }
 
 .navbar a:hover{
-  background-color:#fff;
+  background-color:#222;
   color:#000;
 }
 
@@ -80,6 +90,7 @@
 
 
 
+/* Style the header */
 *{
     box-sizing: border-box;
 }
@@ -97,6 +108,17 @@ a {
 	text-align: center;
     }
 
+#emner li{
+    overflow:hidden; 
+}
+
+header{
+    background-color: #ffcc00;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
 
 footer{
     background-color: #ffcc00;
@@ -105,21 +127,37 @@ footer{
     color: black;
 }
 
-body {
-	background-color: #222;
-	font-family: Georgia, serif;
-    overflow-x: hidden;
+
+
+
+#indhold section.selected {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    }
+
+
+
+#emner{
+    background: #222;
+    padding: 20px;
+    overflow:hidden; 
 }
+
+section:after{
+    content: "";
+}
+
 
 h1{
     color: #ffcc00;
-    font-size: 30px;
     text-align: center;
     text-shadow: #000 1px 1px 2px;
 				}
 
 p{
-    font-size: 14px;
     margin: 10px 40px;
     font-weight: normal;
     line-height: 22px;
@@ -128,7 +166,6 @@ p{
 				}
 
 h3{
-    font-size: 18px;
     margin: 10px 40px;
     font-weight: normal;
     line-height: 22px;
@@ -142,17 +179,26 @@ img{
     align-content: center;
     text-align: center;
     align-items: center;
-    padding-left: 20%;
-    padding-right: 20%%;
 				}
+
+iframe{
+     margin: 10px 20px;
+    font-weight: normal;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
 
 #main h1{
     color: black;
         
 }
 
+
+
+
 #info li{
-    font-size: 14px;
     margin: 10px 40px;
     font-weight: normal;
     line-height: 22px;
