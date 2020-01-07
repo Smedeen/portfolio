@@ -352,6 +352,14 @@ iframe{
         justify-content: center;
         align-items: center;
 }   
+    
+#onepage, #oneb{
+    height: 100vh;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}   
 
 #refleksion{
    90vh;
