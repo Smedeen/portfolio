@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Min portfolio</title>
-        <link rel="stylesheet"href="prostyle.css">
+        <link rel="stylesheet" href="prostyle.css">
     </head>
     <body>
-           <section id="sidebar">
+        <section id="sidebar">
     
   <nav class="navbar">
     <span class="open-slide">
@@ -52,48 +52,50 @@
     }
   </script>
         
-<section id="mitgrid">
-    
-     <div id="main">
+        <div id="mitgrid">
+            <div id="main">
                 <h1>Programmering</h1>
-            </div>
-    
-               <div id="emner"> 
+             </div>
+  
+<! –– Gruden til emner er for at folk hurtig kan danne et overblik, på hvad der kan findes på siden. Emnerne kan ogsåvære med til at lade folk komme til det ene emne, man er interesseret, istedet for at scrolle ned til det.––>
+            <div id="emner"> 
                 <ul>
                     <li><a href="#html">HTML</a></li>
                     <li><a href="#css">CSS</a></li>
                     <li><a href="#grid">Grid</a></li>
                     <li><a href="#responsiv">Responsiv</a></li>
                     <li><a href="#php">PHP</a></li>
-                    <li><a href="#onepage">Onepage</a></li>
+                    <li><a href="onepage">Onepage</a></li>
                     <li><a href="#refleksion">Refleksion</a></li>
                 </ul>
             </div>
     
-    <section id="indhold">
     
    <div id="html">
         <h1>Html:</h1>
             <p>På første hovedforløb blev jeg instrueret til det grundlæggende af Html. Html betyder HyperText Markup Language.</p>
-            <p> HTML bruges til at strukturere indholdet på ens hjemmeside ved hjælp af en række elementer. HTML-elementer består af tags. Et tag består af < og >. Der er altid et startstag <tagnavn> og et slut tag </tagnavn>. Ved tagnavn kan man skrive en tekst eller andet data. Den tekst eller data du indsætter mellem start-tagget og slut-tagget, vil fortælle tagget betydning. Et element kan også have tilhørende attributter, som afgør hvordan elementet skal behandles.</p>
-            <p>I kan se her på en af de første opgaver jeg skulle lave på forløbet, hvordan de forskellige tags kan bruges. </p>
+            <p>HTML bruges til at strukturere indholdet på ens hjemmeside ved hjælp af en række elementer. HTML-elementer består af tags. Et tag består af < og >. Der er altid et startstag <tagnavn> og et slut tag </tagnavn>. Ved tagnavn skriver man en tekst. I den tekst man indsætter mellem start-tagget og slut-tagget, vil fortælle tagget betydning. Et element kan også have tilhørende attributter, som der er med til at bestemmer hvordan elementet skal være.</p>
     </div>
-                
+
+<! –– Iframe har jeg brugt til at få andre projkter ind som en hjemmeside, istedet for et billede. 2 div? hb divet bruges til grid, det andet at for at kommunikere med alle iframe på en gang (der findes sikkert en nemmer løsning) ––>             
     <div id="hb">
-                <iframe src="file:///C:/Users/Maj/Desktop/portforlie/html%20og%20css/index.html.html" height="300"></iframe>
+         <div id="iframe-container">
+                <iframe src="file:///C:/Users/Maj/Desktop/multiemedie/Github/portfolio/html%20og%20css/HTML.html"></iframe>
+        </div>
     </div>
     
             
    <div id="css">
         <h1>CSS:</h1>
             <P>Jeg blev også instrueret til det grundlæggende af css. CSS står for "Cascading Style Sheets.</P>
-            <p> CSS er et kodesprog der beskriver udseende på dine HTML-sider. CSS farvelægger og visualiserer dine HTML-sider. CSS mange forskellige egenskaber, som giver en mulighed for at bestemme skrifttyper, tekststørrelser, farver, marginer, kanter, højder, bredder, baggrundsbilleder, baggrundsfarver osv. på ens hjemmeside. CSS et layout sprog, mens HTML er mere et struktur-sprog. CSS-koden behøves ikke at være skrevet i ens html-dokument, den kan være sin egen fil via et stylesheet, som er linket til ens HTML-dokument. Man kan også skrive CSS direkte i HTML-dokumentet, hvis man ønsker at style et specifikt HTML-element. </p>
-        <p>I kan se her nedenunder videre udvikling på min første html site med brug af css.</p>
+            <p> CSS er et kodesprog der beskriver udseende på dine HTML-sider. CSS farvelægger og visualiserer dine HTML-sider. CSS giver en mange forskellige mulighed for at bestemme ens hjemmesides style, som skrifttyper, størrelser, farver, marginer, højder, bredder, baggrundsbilleder osv. på ens hjemmeside. CSS-koden behøves ikke at være skrevet i ens html-dokument, den kan være sin egen fil via et stylesheet, som er linket til ens HTML-dokument. CSS’en kan også skrives direkte i HTML-filen, hvis man ønsker at style et bestemt HTML-element. </p>
 
        </div>
        
     <div id="cssb">
-                <iframe src="file:///C:/Users/Maj/Desktop/portforlie/html%20og%20css/css.html" height="300"></iframe>
+         <div id="iframe-container">
+                <iframe src="file:///C:/Users/Maj/Desktop/multiemedie/Github/portfolio/html%20og%20css/css.html"></iframe>
+        </div>
     </div>
              
             
@@ -101,10 +103,11 @@
         <h1>Css-grid:</h1>
             <p>CSS-grid er en teknik i ens Stylesheets, der gør det nemmer at lave et responsive hjemmeside lettere. Der har været andre metoder førhen til at kontrollere ens sides layoutmetoder, som tabeller og CSS flexbox. </p>
     </div>
-       
+
+<! ––Billede med det Størrelse jeg gerne vil have at det på mobil versionen ––> 
     <div id=gridb>
-       <img src="mose.png" width="90%">
-         <img src="grid.png" width="90%">
+       <img src="mose.png" width="70%">
+         <img src="grid.png" width="70%">
     </div>
                 
     <div id="responsiv">
@@ -113,6 +116,7 @@
     </div>
        
     <div id=resb>
+        <img src="res-8.png" width="70%">
     </div>
                 
     <div id="php">
@@ -122,6 +126,7 @@
     </div>
        
     <div id=phpb>
+        <img src="php-8.png"width=70%>
     </div>
     
        
@@ -131,8 +136,10 @@
     </div>
        
     <div id="oneb">
-                <iframe src="file:///C:/Users/Maj/Desktop/portforlie/onepage/index.html" height="300">
+         <div id="iframe-container">
+                <iframe src="file:///C:/Users/Maj/Desktop/multiemedie/Github/portfolio/onepage/index.html">
                 </iframe>
+        </div>
     </div>   
             
    <div id="refleksion">
@@ -142,12 +149,11 @@
             <p>Kilder: linkedin learning, w3schools og intro til html, CSS og PHP - Niels Østergaard </p>
     </div>
         
-    </section>
         
         <footer>
             <p>&copy; Maj Smedemark - portfolio</p>
         </footer>
-</section>
+        </div>
         
     </body>
 </html>
