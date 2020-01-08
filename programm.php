@@ -65,7 +65,7 @@
                     <li><a href="#grid">Grid</a></li>
                     <li><a href="#responsiv">Responsiv</a></li>
                     <li><a href="#php">PHP</a></li>
-                    <li><a href="#onepage">Onepage</a></li>
+                    <li><a href="onepage">Onepage</a></li>
                     <li><a href="#refleksion">Refleksion</a></li>
                 </ul>
             </div>

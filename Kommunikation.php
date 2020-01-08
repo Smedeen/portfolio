@@ -68,8 +68,8 @@
                     <li><a href="#præsentationsteknik">Præsentationsteknik</a></li>
                     <li><a href="#paradigme">Paradigme</a></li>
                     <li><a href="#tekstproduktion">Tekstproduktion</a></li>
-                    <li><a href="#business">Business Model Canvas</a></li>
-                    <li><a href="#thinking">Design thinking</a></li>
+                    <li><a href="business">Business Model Canvas</a></li>
+                    <li><a href="thinking">Design thinking</a></li>
                     <li><a href="#refleksion">Refleksion</a></li>
                 </ul>
             </div>
